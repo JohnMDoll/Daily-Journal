@@ -1,67 +1,77 @@
 {
-    "entries": [
-        {
-            "id": 1,
-            "date": "07/24/2025",
-            "concept": "HTML & CSS",
-            "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-            "mood": "Ok"
-        },
-        {
-            "id": 2,
-            "date": "07/26/2025",
-            "concept": "Complex Flexbox",
-            "entry": "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
-            "mood": "Sad"
-        }
-    ],
-    "tags": [],
-    "moods": [
-        {
-            "id": 1,
-            "name": "Angy"
-        },
-        {
-            "id": 2,
-            "name": "Confused"
-        },
-        {
-            "id": 3,
-            "name": "Scared"
-        },
-        {
-            "id": 4,
-            "name": "Hangry"
-        },
-        {
-            "id": 5,
-            "name": "Frustrated"
-        },
-        {
-            "id": 6,
-            "name": "Ambiguous"
-        }
-    ],
-    "instructors": [
-        {
-            "id": 1,
-            "firstName": "Tyler",
-            "lastName": "Hilliard"
-        },
-        {
-            "id": 2,
-            "firstName": "Sydney",
-            "lastName": "Dickson"
-        },
-        {
-            "id": 3,
-            "firstName": "Devin",
-            "lastName": "Kent"
-        },
-        {
-            "id": 4,
-            "firstName": "Caroline",
-            "lastName": "Madison"
-        }
-    ]
+  "entries": [
+    {
+      "id": 1,
+      "date": "07/24/2025",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "instructor": "Tyler",
+      "mood": "Ok"
+    },
+    {
+      "id": 2,
+      "date": "07/26/2025",
+      "concept": "Complex Flexbox",
+      "entry": "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
+      "instructor": "Caroline",
+      "mood": "Sad"
+    },
+    {
+      "entryDate": "2022-10-12",
+      "concept": "jdgcgnc",
+      "entry": "ngtjfdhxsbn",
+      "instructor": "2",
+      "mood": "6",
+      "id": 3
+    }
+  ],
+  "tags": [],
+  "moods": [
+    {
+      "id": 1,
+      "name": "Angy"
+    },
+    {
+      "id": 2,
+      "name": "Confused"
+    },
+    {
+      "id": 3,
+      "name": "Scared"
+    },
+    {
+      "id": 4,
+      "name": "Hangry"
+    },
+    {
+      "id": 5,
+      "name": "Frustrated"
+    },
+    {
+      "id": 6,
+      "name": "Ambiguous"
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "firstName": "Tyler",
+      "lastName": "Hilliard"
+    },
+    {
+      "id": 2,
+      "firstName": "Sydney",
+      "lastName": "Dickson"
+    },
+    {
+      "id": 3,
+      "firstName": "Devin",
+      "lastName": "Kent"
+    },
+    {
+      "id": 4,
+      "firstName": "Caroline",
+      "lastName": "Madison"
+    }
+  ]
 }

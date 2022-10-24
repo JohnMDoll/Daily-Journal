@@ -4,6 +4,7 @@ const applicationState = {
     moods: [],
     tags: []
 }
+const mainContainer = document.querySelector("#container")
 
 export const fetchEntries = () => {
     return fetch("http://localhost:8088/entries") // Fetch from the API
@@ -40,4 +41,21 @@ export const getInstructors=()=>{
     // let instructorsCopy = 
     return structuredClone(applicationState.instructors)
     // return instructorsCopy
+}
+////what does the fetchOptions content actually do??
+export const sendJournal = (dataToSend) => {
+    const fetchOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(dataToSend)
+    }
+
+///
+    return fetch("http://localhost:8088/entries", fetchOptions)
+        .then(response => response.json())
+        .then(() => {
+            mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
+        })
 }
