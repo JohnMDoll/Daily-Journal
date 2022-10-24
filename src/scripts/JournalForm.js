@@ -25,12 +25,6 @@ mainContainer.addEventListener("click", clickEvent => {
             mood: mood
         }
 
-        // let checkedTopics = []
-        // topicId.forEach(id => { checkedTopics.push(parseInt(id.value)) })
-        // let topicDataToSendToAPI = {
-        //     timestamp: timestamp,
-        //     topics: checkedTopics
-        // }
         // Send the data to the API for permanent storage
         dataAccess.sendJournal(dataToSendToAPI)
     }
@@ -41,7 +35,7 @@ export const WriteJournal = () => {
     let instructors = dataAccess.getInstructors()
     let moods = dataAccess.getMoods()
     const journalForm = () => {
-        let html = `
+        let html = `<section class="form">
             <fieldset class="field">
                 <label class="label" for="entryDate">Date of Entry</label>
                 <input type="date" name="entryDate" class="input" value=""/>
@@ -70,10 +64,26 @@ export const WriteJournal = () => {
                     }).join("")}
                 </select>
             </fieldset>
-            <button class="send--journal" id="send--journal">Send</button></li>`
+            <button class="send--journal" id="send--journal">Send</button></li>
+            </section>`
 
         return html
     }
-    const html = journalForm()
+    const pastEntries = () => {
+        let entries = dataAccess.getEntries()
+        let entriesHTML = `
+        <section class ="past--entries">
+        ${entries.map(entry => {return `
+        <div class="old--entry" id="entry--${entry.id}">
+            <h2>${entry.concept}</h2>
+            <div id="entry--entry">${entry.entry}</div>
+            <div id="entry--date">${entry.entryDate}</div>
+        </div>`
+    }).join("")}
+        </section>`
+        return entriesHTML
+    }
+
+    const html = journalForm()+pastEntries()
     return html
 }

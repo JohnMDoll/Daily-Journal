@@ -2,26 +2,26 @@
   "entries": [
     {
       "id": 1,
-      "date": "07/24/2025",
+      "entryDate": "07/24/2025",
       "concept": "HTML & CSS",
       "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-      "instructor": "Tyler",
-      "mood": "Ok"
+      "instructor": "1",
+      "mood": "4"
     },
     {
       "id": 2,
-      "date": "07/26/2025",
+      "entryDate": "07/26/2025",
       "concept": "Complex Flexbox",
       "entry": "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
-      "instructor": "Caroline",
-      "mood": "Sad"
+      "instructor": "2",
+      "mood": "3"
     },
     {
       "entryDate": "2022-10-12",
       "concept": "jdgcgnc",
       "entry": "ngtjfdhxsbn",
       "instructor": "2",
-      "mood": "6",
+      "mood": 6,
       "id": 3
     }
   ],
