@@ -59,3 +59,11 @@ export const sendJournal = (dataToSend) => {
             mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
         })
 }
+export const deleteEntry = (id) => {
+    return fetch(`http://localhost:8088/entries/${id}`, { method: "DELETE" })
+        .then(
+            () => {
+                mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
+            }
+        )
+}

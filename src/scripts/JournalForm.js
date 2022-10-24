@@ -9,9 +9,8 @@ mainContainer.addEventListener("click", clickEvent => {
 
     if (clickEvent.target.id === "send--journal") {
         let tagId = []
-        let concept = []
         const entryDate = document.querySelector("input[name='entryDate']").value
-        concept = document.querySelector("input[name='concepts']").value
+        const concept = document.querySelector("input[name='concepts']").value
         const entry = document.querySelector("#journal").value
         const instructor = document.querySelector("#instructor").value
         const mood = document.querySelector("#mood").value
@@ -27,6 +26,11 @@ mainContainer.addEventListener("click", clickEvent => {
 
         // Send the data to the API for permanent storage
         dataAccess.sendJournal(dataToSendToAPI)
+    }
+    if (clickEvent.target.id.startsWith("delete--")) {
+        
+        let [,entryId] = clickEvent.target.id.split("--")
+        dataAccess.deleteEntry(entryId)
     }
 })
 export const WriteJournal = () => {
@@ -64,7 +68,7 @@ export const WriteJournal = () => {
                     }).join("")}
                 </select>
             </fieldset>
-            <button class="send--journal" id="send--journal">Send</button></li>
+            <button class="send--journal" id="send--journal">Send</button>
             </section>`
 
         return html
@@ -78,7 +82,8 @@ export const WriteJournal = () => {
             <h2>${entry.concept}</h2>
             <div id="entry--entry">${entry.entry}</div>
             <div id="entry--date">${entry.entryDate}</div>
-        </div>`
+            <button class="delete" id="delete--${entry.id}">Delete</button>
+            </div>`
     }).join("")}
         </section>`
         return entriesHTML
