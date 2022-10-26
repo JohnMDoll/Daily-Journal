@@ -22,3 +22,13 @@ fieldset{
 	display: flex;
 	flex-direction: column;
 }
+/* .filter{
+	display: flex;
+	justify-content: center;
+	flex-direction: row; 
+}*/
+#filter{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
