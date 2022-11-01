@@ -1,0 +1,211 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "entryDate": "07/24/2025",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "instructor": "1",
+      "mood": "4"
+    },
+    {
+      "id": 2,
+      "entryDate": "07/26/2025",
+      "concept": "Complex Flexbox",
+      "entry": "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
+      "instructor": "2",
+      "mood": "3"
+    },
+    {
+      "entryDate": "2022-01-01",
+      "concept": "sgse",
+      "entry": "gergwer",
+      "instructor": "1",
+      "mood": "1",
+      "id": 3
+    },
+    {
+      "entryDate": "2022-01-01",
+      "concept": "jhiuo",
+      "entry": "hguiiuggui",
+      "instructor": "1",
+      "mood": "1",
+      "id": 4
+    },
+    {
+      "entryDate": "2022-10-19",
+      "concept": "Broke the Internet",
+      "entry": "We totally broke the iinternet. It's gone now.",
+      "instructor": "1",
+      "mood": "1",
+      "id": 5
+    },
+    {
+      "entryDate": "2022-02-02",
+      "concept": "hniulohb",
+      "entry": "hlbnjuiklbhjuhiklb",
+      "instructor": "1",
+      "mood": "1",
+      "id": 6
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "subject": "API"
+    },
+    {
+      "id": 2,
+      "subject": "components"
+    },
+    {
+      "id": 3,
+      "subject": "fetch"
+    },
+    {
+      "subject": "TESTS",
+      "id": 4
+    },
+    {
+      "subject": "test?",
+      "id": 5
+    },
+    {
+      "subject": "fheuilghui",
+      "id": 6
+    },
+    {
+      "subject": "renders?",
+      "id": 7
+    },
+    {
+      "subject": "ahhhhhhh",
+      "id": 8
+    },
+    {
+      "subject": "ohuio",
+      "id": 9
+    },
+    {
+      "subject": "hh",
+      "id": 10
+    },
+    {
+      "subject": "hjklhjklhjkl",
+      "id": 11
+    },
+    {
+      "subject": "hjklhjklhjkl",
+      "id": 12
+    },
+    {
+      "subject": "eee",
+      "id": 13
+    },
+    {
+      "subject": "ihoih;;ioh;oiug;giuo;oiugb",
+      "id": 14
+    },
+    {
+      "subject": "njklnkjl",
+      "id": 15
+    },
+    {
+      "subject": "jbhkjhbkl",
+      "id": 16
+    },
+    {
+      "subject": "boo",
+      "id": 17
+    },
+    {
+      "subject": "hiss",
+      "id": 18
+    }
+  ],
+  "entryTags": [
+    {
+      "id": 1,
+      "entryId": 1,
+      "tagId": 2
+    },
+    {
+      "id": 3,
+      "entryId": 2,
+      "tagId": 1
+    },
+    {
+      "id": 4,
+      "entryId": 2,
+      "tagId": 3
+    },
+    {
+      "entryId": 6,
+      "tagId": 1,
+      "id": 6
+    },
+    {
+      "entryId": 6,
+      "tagId": 16,
+      "id": 7
+    },
+    {
+      "entryId": 7,
+      "tagId": 16,
+      "id": 8
+    },
+    {
+      "entryId": 7,
+      "tagId": 16,
+      "id": 9
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "name": "Angy"
+    },
+    {
+      "id": 2,
+      "name": "Confused"
+    },
+    {
+      "id": 3,
+      "name": "Scared"
+    },
+    {
+      "id": 4,
+      "name": "Hangry"
+    },
+    {
+      "id": 5,
+      "name": "Frustrated"
+    },
+    {
+      "id": 6,
+      "name": "Ambiguous"
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "firstName": "Tyler",
+      "lastName": "Hilliard"
+    },
+    {
+      "id": 2,
+      "firstName": "Sydney",
+      "lastName": "Dickson"
+    },
+    {
+      "id": 3,
+      "firstName": "Devin",
+      "lastName": "Kent"
+    },
+    {
+      "id": 4,
+      "firstName": "Caroline",
+      "lastName": "Madison"
+    }
+  ]
+}
